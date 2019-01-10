@@ -1,6 +1,6 @@
 #!/bin/bash
-x = 0
-if [$x -eq 0]
+declare x=0
+if [ $x -eq 0 ]
 then
 echo "yaay"
 else 
