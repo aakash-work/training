@@ -1,0 +1,4 @@
+create table timeTab(previousCheck timestamp NOT NULL);
+insert into timeTab values('1970-01-01 16:16:16');
+
+//Login to your SQL in terminal once before running the script, also remember to create these tables before running the script. 
