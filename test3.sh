@@ -3,8 +3,8 @@
 #!/bin/bash
 
 read input
-output=$(sudo mysql Test <<EOF
-use Test
+output=$(sudo mysql session <<EOF
+use session
 select id, email from authors where abs(datediff(birthdate,curdate())/365)>="$input" and added>(select * from timeStmp) ;
 truncate timeStmp;
 insert into timeStmp values(now());
