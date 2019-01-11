@@ -1,4 +1,5 @@
 SAMPLE COMMAND:
 
-
+Pass age as param 1
+pass output file name as param 2
 ./script_to_run.sh 30 output
