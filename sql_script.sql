@@ -1014,5 +1014,3 @@ INSERT INTO `authors` (`id`, `first_name`, `last_name`, `email`, `birthdate`, `a
 INSERT INTO `authors` (`id`, `first_name`, `last_name`, `email`, `birthdate`, `added`) VALUES (998, 'Nelda', 'Rice', 'renner.lelia@example.com', '1999-03-13', '1980-11-01 23:13:53');
 INSERT INTO `authors` (`id`, `first_name`, `last_name`, `email`, `birthdate`, `added`) VALUES (999, 'Cydney', 'Kihn', 'maximillian80@example.org', '2004-09-15', '2014-10-23 16:41:27');
 INSERT INTO `authors` (`id`, `first_name`, `last_name`, `email`, `birthdate`, `added`) VALUES (1000, 'Hiram', 'Kiehn', 'ygislason@example.net', '1987-03-20', '2012-04-11 18:56:59');
-
-
