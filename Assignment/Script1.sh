@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo 'Executing default sql script....'
+echo 'Executing default sql script'
+echo 'Adding the table authors...'
 
 sudo mysql -u root session< ../sql_script.sql
 
