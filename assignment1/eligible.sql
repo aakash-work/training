@@ -1,5 +1,5 @@
 #
-# Table structure for eligible
+# Table structure for valid_auth
 #
 CREATE TABLE IF NOT EXISTS valid_auth(
 	id int(11) NOT NULL AUTO_INCREMENT,
