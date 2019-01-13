@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+
+    <hibernate-configuration>
+        <session-factory>
+            <property name="hibernate.connection.driver_class">
+                com.mysql.jdbc.Driver
+            </property>
+            <property name="hibernate.connection.url">
+                jdbc:mysql://localhost/test1
+            </property>
+            <property name="hibernate.connection.username">
+                karthik.bhat
+            </property>
+            <property name="hibernate.connection.password">
+                Pass_1234
+            </property>
+
+            <property name="hibernate.hbm2ddl.auto">update</property>
+
+            <property name="hibernate.current_session_context_class">thread</property>
+
+            <mapping class="com.karthikbhat.Employee"/>
+            <mapping class="com.karthikbhat.Address"/>
+
+        </session-factory>
+    </hibernate-configuration>
+

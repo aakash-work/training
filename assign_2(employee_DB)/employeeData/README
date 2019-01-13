@@ -1,0 +1,3 @@
+Database name - empDB
+
+or edit src/main/resources/hibernate-conf.cfg.xml for MySql configurations.
