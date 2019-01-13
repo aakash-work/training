@@ -1,0 +1,7 @@
+create database ayush;
+use ayush;
+
+create table emp(name text, id int primary key, desgn text, dept text, address text, vehicle text, compen int);
+create table empContact(id int, cnumber char(10), foreign key (id) references emp(id));
+
+//Run this in sql before running Java Project.
