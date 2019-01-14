@@ -1,0 +1,20 @@
+{
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Debug (Launch) - External Terminal",
+            "request": "launch",
+            "console": "externalTerminal",
+            "mainClass": "com.hiranmaya_gundu.App",
+            "projectName": "Assignment2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "com.hiranmaya_gundu.App",
+            "projectName": "Assignment2"
+        }
+    ]
+}
