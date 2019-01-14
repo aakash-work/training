@@ -1,0 +1,2 @@
+nginx is load balancer and reverse proxy.
+

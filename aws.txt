@@ -1,0 +1,29 @@
+s3 is a storage service on cloud used for persistent storage. It stands for simple storage. Athena is used for querrying.
+
+two type of access programmatic and console
+
+source credentials file
+
+aws s3 ls= list all the buckets
+
+aws s3 cp/home/a/x s3://training-miq.aws/ = for copying from local to bucket
+
+mv- for moving
+
+
+mb- make bucket 
+
+
+Redshift----
+Here we have partitioning based on distkey.
+
+sort key-sorts the data based on the parameters passed to it.
+
+
+data must be available on s3 for getting in redshift
+
+
+COPY table-name 
+FROM ' '
+iam_role ' 's
+
