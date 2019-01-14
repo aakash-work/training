@@ -1,5 +1,5 @@
-#
-# TABLE STRUCTURE FOR: authors
+Terminal close -- exit!
+ authors
 #
 
 DROP TABLE IF EXISTS `authors`;
