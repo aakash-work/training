@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5445a97-f996-4e81-8248-06f11fb2406f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/swetha/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/swetha/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/swetha/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/swetha/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/swetha/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/swetha/DBConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/swetha/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/swetha/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/swetha/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/swetha/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/swetha/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/swetha/AppTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="c5445a97-f996-4e81-8248-06f11fb2406f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/swetha/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5557#5558#0" expanded="true" />
@@ -121,7 +113,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="119" />
     <option name="y" value="157" />
     <option name="width" value="1161" />
@@ -178,7 +170,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547394464350" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547367339918" />
     <property name="last_opened_file_path" value="/usr/share/java/mysql-connector-java-5.1.45.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -244,7 +236,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="1299" height="741" extended-state="6" />
+    <frame x="67" y="27" width="1299" height="741" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26256984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -255,7 +248,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3983471" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3983471" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,7 +313,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/swetha/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5557#5558#0" expanded="true" />
