@@ -188,6 +188,33 @@ public class Main {
 
             System.out.println(ps);
             ps.executeUpdate();
+
+            //Deleting the phone numbers for the updation
+            query="delete from contact_num where emp_id=?";
+            ps=connection.prepareStatement(query);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+
+            //Now enter the phone numbers for updation
+            int ch = 0;
+            do{
+                s.nextLine();
+                System.out.println("Enter the updated phone number: ");
+                String num = s.nextLine();
+
+                query="insert into contact_num (emp_id, number) values (?,?)";
+                ps=connection.prepareStatement(query);
+                ps.setInt(1, id);
+                ps.setString(2, num);
+
+                System.out.println(ps);
+                ps.executeUpdate();
+
+                System.out.println("Do you want to enter more phone numbers? (Press 1 for yes)");
+                ch = s.nextInt();
+
+            }while(ch == 1);
+
             System.out.println("-------RECORDS UPDATED--------");
 
         } catch (Exception e) {
