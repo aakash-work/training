@@ -100,6 +100,21 @@ public class Employee {
     public void setMobile_no(String mobile_no) {
         this.mobile_no = mobile_no;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", designation='" + designation + '\'' +
+                ", department='" + department + '\'' +
+                ", employee_id=" + employee_id +
+                ", perm_addr=" + perm_addr +
+                ", temp_addr=" + temp_addr +
+                ", mobile_no='" + mobile_no + '\'' +
+                ", compensation=" + compensation +
+                '}';
+    }
 }
 
 
