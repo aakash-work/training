@@ -18,32 +18,37 @@ public class DBConn
     private static Connection conn =null;
     private static Statement stmt = null;
     // private constructor restricted to this class itself
-    private DBConn() throws
-            ClassNotFoundException,SQLException
+    private DBConn() 
     {
 
+    	try
+    	{
         Class.forName("com.mysql.jdbc.Driver");
         System.out.println("Connecting to database...");
         conn = DriverManager.getConnection(DB_URL,USER,PASS);
         System.out.println("It works !");
+    	}
+    	catch(Exception e)
+        {
+            System.out.println("Not connected");
+            e.printStackTrace();
+            closeConn();
+            
+        }
+    	
+    	
         //conn.close();
     }
 
     // static method to create instance of Singleton class
     public static DBConn getInstance()
     {
-      try {
+     
           if (sobj == null)
               sobj = new DBConn();
 
           return sobj;
-      }
-      catch(Exception e)
-      {
-          System.out.println("Not connected");
-          e.printStackTrace();
-          return sobj;
-      }
+      
     }
     public int execute(String sql)
     {

@@ -111,6 +111,7 @@ public class App
             System.out.println("Enter -1 to quit");
             cont=sc.nextInt();
         }while(cont!=-1);
+        sc.close();
         Employee.finish();
 
     }
