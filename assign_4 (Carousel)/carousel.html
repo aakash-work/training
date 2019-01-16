@@ -69,14 +69,15 @@ function calcTime(city, offset) {
 
     var nd = new Date(utc + (3600000*offset));
     
-    return "The local time for city"+ city +" is "+ nd.toLocaleString();
+    return "The local time for "+ city +" is "+ nd.toLocaleString();
 }
     function fillTime(){
+        console.log("running")
         document.getElementById("mumbai").innerHTML = calcTime('Mumbai', '+5.5')
         document.getElementById("ny").innerHTML = calcTime('Mumbai', '-5.0')
         document.getElementById("london").innerHTML = calcTime('Mumbai', '+1.0')
 
-
+        setTimeout(fillTime, 1000);
     }
 </script>
 </body>
