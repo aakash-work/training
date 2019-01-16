@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body bgcolor="powderblue">
+
+<div class="container">
+  <h2>Cities and Timezones</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="Images/Agra.jpg" alt="Agra" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="Agra"></h1></div>
+       </div>
+      </div>
+
+      <div class="item">
+        <img src="Images/Beijing.jpg" alt="Beijing" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="Beijing"></h1></div>
+      </div>
+    </div>
+    
+      <div class="item">
+        <img src="Images/london.jpg" alt="London" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="London"></h1></div>
+      </div>
+    </div>
+
+      <div class="item">
+        <img src="Images/Moscow.jpg" alt="Moscow" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="Moscow"></h1></div>
+      </div>
+    </div>
+
+      <div class="item">
+        <img src="Images/new_york.jpg" alt="NY" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="NY"></h1></div>
+      </div>
+    </div>
+
+      <div class="item">
+        <img src="Images/paris.jpg" alt="Paris" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="Paris"></h1></div>
+      </div>
+    </div>
+
+      <div class="item">
+        <img src="Images/sydney.jpg" alt="Sydney" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="Sydney"></h1></div>
+      </div>
+    </div>
+
+      <div class="item">
+        <img src="Images/tokyo.jpg" alt="Tokyo" style="width:100%;height: 600px">
+        <div class="carousel-caption trickcenter">
+       <div><h1 id="Tokyo"></h1></div>
+      </div>
+    </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+  <script type="text/javascript">
+
+      function setTime(){
+          var Agra = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
+          var Beijing = new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' });
+          var London = new Date().toLocaleString('en-US', { timeZone: 'Europe/London' });
+          var Moscow = new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' });
+          var Paris = new Date().toLocaleString('en-US', { timeZone: 'Europe/Paris' });
+          var Sydney = new Date().toLocaleString('en-US', { timeZone: 'Australia/Sydney' });
+          var Tokyo = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo' });
+          var NY = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+
+
+          document.getElementById("Agra").innerHTML=Agra;
+          document.getElementById("Beijing").innerHTML=Beijing;
+          document.getElementById("London").innerHTML=London;
+          document.getElementById("Moscow").innerHTML=Moscow;
+          document.getElementById("Paris").innerHTML=Paris;
+          document.getElementById("Sydney").innerHTML=Sydney;
+          document.getElementById("Tokyo").innerHTML=Tokyo;
+          document.getElementById("NY").innerHTML=NY;
+    }
+
+    setInterval(setTime,1000);
+
+  </script>
