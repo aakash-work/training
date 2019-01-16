@@ -67,8 +67,8 @@ public class EmployeeController {
 	@RequestMapping(value="/incrementSalary", method=RequestMethod.POST, produces="application/json")
 	public ResponseEntity<Employee> incrementEmployeeSalary( @RequestParam("employeeId") long employeeId, @RequestParam("increment") double increment ){
 		Employee newEmployee = employeeRepository.findById(employeeId).get();
-		Double currentSalary = newEmployee.getSalary();
-		Double newSalary = currentSalary * increment / 100 + currentSalary;
+		double currentSalary = newEmployee.getSalary();
+		double newSalary = currentSalary * increment / 100 + currentSalary;
 		newEmployee.setSalary(newSalary);
 		Employee savedEmployee = employeeRepository.save(newEmployee);
 		return new ResponseEntity<Employee>(savedEmployee,HttpStatus.OK);

@@ -1,0 +1,21 @@
+h2 {
+font-family: Ubuntu;
+background-color: #5E2750;
+align-content: center;
+margin: 0%;
+color: white;
+text-transform: capitalize;
+padding: 10%;
+}
+
+body{
+    background-color: #5E2750;
+}
+
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
+}
