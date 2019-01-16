@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootTrainingApplication<springboot_training>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.miq_bootcamp.springboot_training.SpringbootTrainingApplication",
+            "projectName": "springboot_training",
+            "args": ""
+        }
+    ]
+}
