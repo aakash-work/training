@@ -40,10 +40,14 @@ public class EmployeeController {
 	  public ResponseEntity<Employee> returnOneEmployeeByEmail(@RequestParam("employeeMail") String employeeMail) {
 	    return new ResponseEntity<Employee>(employeeRepository.findByemployeeMail(employeeMail).get(), HttpStatus.OK);
 	  }
-	  @RequestMapping(value="/increment-salary?employeeId={employeeId}&percent={percent}", method=RequestMethod.PUT, produces="application/json")
-	  public ResponseEntity<Employee> updateEmployee(@PathVariable("employeeId") long employeeId, @PathVariable("percent") int percent ){
+	  @RequestMapping(value="/increment", method=RequestMethod.POST, produces="application/json")
+	  public ResponseEntity<Employee> updateEmployee(@RequestParam("employeeId") long employeeId, @RequestParam("percent") int percent ){
 		  Employee foundEmployee= employeeRepository.findByemployeeId(employeeId).get();
-		  foundEmployee.setEmployeeSalary((100+percent)/100*foundEmployee.getEmployeeSalary());
+		  long newsal=foundEmployee.getEmployeeSalary();
+		  System.out.println("/n SALARY"+newsal);
+		  newsal=newsal+newsal*5/100;
+		  foundEmployee.setEmployeeSalary(newsal);
+		  employeeRepository.save(foundEmployee);
 		  return new ResponseEntity<Employee> (employeeRepository.findByemployeeId(employeeId).get(),HttpStatus.OK);
 	  }
 	  

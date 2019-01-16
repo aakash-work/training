@@ -45,8 +45,9 @@ public class Employee {
 	public long getEmployeeSalary() {
 		return employeeSalary;
 	}
-	public void setEmployeeSalary(long employeeSalary) {
+	public Employee setEmployeeSalary(long employeeSalary) {
 		this.employeeSalary = employeeSalary;
+		return(this);
 	}
 	
 	
