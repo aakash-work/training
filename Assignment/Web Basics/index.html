@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <style>
+                .carousel-inner img {
+                    width: 100%;
+                    height: 100%;
+                }
+        </style>
+    </head>
+
+    <body class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Mumbai.jpg" alt="Mumbai">
+                <div class="carousel-caption">
+                  <h3>Mumbai</h3>
+                  <p id="mumbaiTime"></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./gotham.jpg" alt="Gotham">
+                <div class="carousel-caption">
+                  <h3>Gotham</h3>
+                  <p id="gothamTime"></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./london.jpg" alt="London">
+                <div class="carousel-caption">
+                    <h3>London</h3>
+                    <p id="londonTime"></p>
+                  </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+
+          <script>
+
+            var mumbaiDate = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
+            document.getElementById("mumbaiTime").innerHTML = mumbaiDate;
+
+            var gothamDate = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+            document.getElementById("gothamTime").innerHTML = gothamDate;
+
+            var londonDate = new Date().toLocaleString('en-US', { timeZone: 'Europe/london' });
+            document.getElementById("londonTime").innerHTML = londonDate;
+
+          </script>
+
+    </body>
+</html>
